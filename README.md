@@ -2,9 +2,9 @@
 
 Um pequeno projeto com exemplo de uso de recursos do Firebase
 
-Firebase Auth
-Firebase Cloud Store
-Firebase Firestore
+    Firebase Auth
+    Firebase Cloud Store
+    Firebase Firestore
 
 ## Getting Started
 
