@@ -12,6 +12,7 @@ class LoginController {
   void entrar(BuildContext context) async {
     var dialog = new DialogBox();
 
+    //Validar
     if (emailController.text.trim().length == 0) {
       dialog.showWarning(context,
           titulo: 'ATENÇÃO!', texto: 'E-mail não informado!');
@@ -21,9 +22,11 @@ class LoginController {
       dialog.showWarning(context, titulo: 'ATENÇÃO!', texto: 'Senha inválida');
     }
 
+    //ação
     var login = await _repository.efetuarLogin(
         emailController.text, senhaController.text);
 
+    //Resposta
     if (login == null)
       dialog.showWarning(context, titulo: 'ATENÇÃO!', texto: 'Login inválido!');
     else
